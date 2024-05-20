@@ -1,0 +1,286 @@
+body{
+    /* background: linear-gradient(to top, #0ba360 0%, #3cba92 100%); */
+    /* background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%); */
+    background: linear-gradient(to top, #000000 45%, #1e2328 100%);
+    max-width: 100%;
+    height: 100;
+    background-repeat: space;
+    font-family: 'arial';
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+    background: linear-gradient(to top, #000000 45%, #1e2328 100%);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #067d4a;
+    border-radius: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #067d4a;
+    border-radius: 20px 20px;
+    box-shadow: 10px 10px 5px 5px #000000;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 50px;
+    border-radius: 99em;
+    text-decoration: none;   
+    color: rgb(255, 255, 255);
+    margin: 0 35px;
+}
+
+
+.contenido{
+    /* max-width: 400px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin: 45px;
+   /* max-height: 400px; */
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 0.1px;
+    margin: 5px;
+}
+
+.PsychoSystem{
+    height: 450px;
+    margin: 45px 0 30px 0 ;
+    filter: drop-shadow(10px 5px 10px rgb(28, 28, 28));
+    padding: 0.1px;
+    
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(to bottom, #08c070 0%, #067d4a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(10px 5px 10px rgba(0, 255, 0, 0.742));
+    font-size: 70px;
+}
+
+.copy{
+    color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1;
+    margin: 15px;
+    max-width: 450px;
+    width: 100%;
+    filter: drop-shadow(10px 5px 10px rgba(59, 252, 0, 0.594));
+    font-size: 17px;
+}
+/* div{
+    background: red;
+} */
+
+/* header{
+    background: linear-gradient(to top, #000000 0%, #1e2328 100%);
+} */
+
+
+/* Footer */
+
+footer{
+    /* background: linear-gradient(to bottom, #000000 45%, #1e2328 100%); */
+    background: black;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding-top: 60px;
+    padding-bottom: 40px; */
+}
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+    margin: 40px 30px 30px 0;
+}
+
+.brand+p{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.social-media{
+    width: 50%;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff 
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: #067d4a;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #067d4a;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 800px){
+    .menu-navegacion{
+        width: 70vw;
+        margin-left: 15vw;
+    }
+
+    .copy{
+        font-size: 20px;
+    }
+
+    .titulo{
+        font-size: 60px;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icon{
+        margin-left: 0;
+    }
+    
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 500px){
+    .menu-navegacion{
+       width: 80vw;
+       margin-left: 10vw;
+    }
+
+    .img{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .PsychoSystem{
+        margin: 0 15px;
+        padding: 0;
+    }
+
+
+    .titulo{
+        font-size: 55px;
+    }
+    .social-media{
+        width: 100%;
+    }
+
+    .contact-us{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 300px){
+    .titulo{
+        font-size: 25px;
+    }
+
+    .copy{
+        font-size: 20px;
+    }
+
+    .img{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .PsychoSystem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15px;
+        padding: 0;
+        height: 90%;
+        width: 90%;
+    }
+
+    .navegacion{
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        height: 40px;
+    }
+    .menu-navegacion{
+        height: 40px;
+        padding: 0;
+    }
+    .copy{
+        font-size: 10px;
+        width: 80vw;
+    }
+}

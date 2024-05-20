@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilobasico.css">
+    <link rel="icon" href="../img/PsychoSystem.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Tienda Basica</title>
+</head>
+<body>
+    <header>
+        <h1>Tienda</h1>
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+                    <!-- transform: ;msFilter:; -->
+                    <path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle>
+                </svg>
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+            </div>
+                <div class="container-cart-products hidden-cart">
+                    <div class="row-product">
+                        <div class="cart-product">
+                           <!-- <div class="info-cart-product">
+                                <span class="cantidad-producto-carrito">
+                                    1
+                                </span>
+                                <p class="titulo-producto-carrito">Zapatos</p>
+                                <span class="precio-producto-carrito">$100000</span>
+                            </div> 
+                            <svg 
+                                class="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(0, 0, 0);">
+    
+                                
+    
+                                <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+                            </svg> -->
+                        </div>
+                    </div>
+                    <div class="cart-total">
+                         <h3>Total:</h3>
+                         <span class="total-pagar">$0</span>
+                    </div>
+                    <div class="cart-pay">
+                        <button class="btn-pay-products">Pagar</button>
+                    </div>
+                </div>
+        </div>
+    </header>
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="../img/zapatillas.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Zapatos</h2>
+                <p class="price">$100000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/ps4.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>PlayStation 4</h2>
+                <p class="price">$100000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/audifonos.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Audifonos</h2>
+                <p class="price">$160000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/perfume.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Perfume</h2>
+                <p class="price">$150000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="../img/itachi.jpg" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h2>Muñeco</h2>
+                <p class="price">$80000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    <footer class="atras">
+        <button class="btn-back" onclick="irAtras()">Volver</button>
+    </footer>
+    <script src="../js/basicodemo.js"></script>
+</body>
+</html>
